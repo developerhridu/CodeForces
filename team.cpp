@@ -10,16 +10,17 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n, Petya, Vasya, Tonya, num(0);
     cin >> n;
-    if (n <= 2 || n % 2 != 0)
+    while (n--)
     {
-        cout << "NO\n";
+        cin >> Petya >> Vasya >> Tonya;
+        if (Petya + Vasya + Tonya >= 2)
+        {
+            num += 1;
+        }
     }
-    else
-    {
-        cout << "YES\n";
-    }
+    cout << num << endl;
 
     return 0;
 }
